@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Condition Check</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="main-body">
+        <div class="nav-bar">
+            <div class="left-nav">
+                <!-- <img src="images/logo.png" alt=""> -->
+                <h2>Air-Predictor.com</h2>
+            </div>
+            <div class="right-nav">
+                <h4 id="date">Date</h4>
+            </div>
+        </div><hr>
+        <div class="input-field">
+            <input type="text" placeholder="Find polution of your city.." class="form-control" id="input">
+            <button type="submit" class="btn btn-outline-primary" id="btn">Search </button>
+        </div><hr>
+        <div class="air-deatils" id="result">
+        <div class="main-bod">
+            <div class="conditions">
+                <span>Condition:-</span><h1 id="air-condition"></h1>
+            </div>
+        </div><hr>
+        <div class="geografical">
+            <div class="log">
+                <h2>Longitude</h2>
+                <p id="log"></p>
+            </div>
+            <div class="lat">
+                <h2>Latitude</h2>
+                <p id="lat"></p>
+            </div>
+        </div><hr>
+        <div class="wheather-conditions">
+            <div class="wheather-heading">
+                <h2><u>Wheather Condition</u></h2>
+            </div>
+            <div class="wheather">
+                <div class="temp" id="grid">
+                    <img src="images/clear.png" alt="">
+                    <div class="data">
+                        <p class="para" id="temp"> </p><span>°C</span>
+                    </div>
+                    <h5 class="cityname">Temp</h5>
+                </div>
+                <div class="air" id="grid">
+                    <img src="images/humidity.png" alt="">
+                    <div class="data">
+                        <p class="para" id="humidity"> </p><span>%</span>
+                    </div>
+                    <h5 class="text">Humidity</h5>
+                </div>
+                <div class="air" id="grid">
+                    <img src="images/wind.png" alt="">
+                    <div class="data">
+                        <p class="para" id="wind"> </p><span>km/h</span>
+                    </div>
+                    <h5 class="text">Wind</h5>
+                </div>
+            </div>
+        </div><hr>
+        <div class="components">
+            <div class="components-heading">
+                <h2><u>Air Condition </u></h2>
+            </div>
+            <div class="air-resuit">
+                <div class="air">
+                    <img src="images/corbon monooxide.jfif" alt="">
+                    <div class="data">
+                        <p class="para" id="co"> </p><span>µg/m^3</span>
+                    </div>
+                    <h5 class="text">Carbon Monoxide</h5>
+                </div>
+                <div class="air">
+                    <img src="/images/Nitrogen-Monoxide.png" alt="">
+                    <div class="data">
+                        <p class="para" id="no"></p><span>µg/m^3</span>
+                    </div>
+                    <h5 class="text">Nitrogen Monoxide</h5>
+                </div>
+                <div class="air">
+                    <img src="images/Nitrogen-Dioxide.png" alt="">
+                    <div class="data">
+                        <p class="para" id="nod"> </p><span>µg/m^3</span>
+                    </div>
+                    <h5 class="text">Nitrogen Dioxide</h5>
+                </div>
+                <div class="air">
+                    <img src="images/ozone.png" alt="">
+                    <div class="data">
+                        <p class="para" id="o3"> </p><span>µg/m^3</span>
+                    </div>
+                    <h5 class="text">Ozone</h5>
+                </div>
+                <div class="air">
+                    <img src="images/sulpher dioxide.jfif" alt="">
+                    <div class="data">
+                        <p class="para" id="su"> </p><span>µg/m^3</span>
+                    </div>
+                    <h5 class="text">Sulphur Dioxide</h5>
+                </div>
+                <div class="air">
+                    <img src="images/ammonia.jfif" alt="">
+                    <div class="data">
+                        <p class="para" id="nh"> </p><span>µg/m^3</span>
+                    </div>
+                    <h5 class="text">Ammonia</h5>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="error-occur" id="error">
+            <div class="error">
+                <dotlottie-player src="https://lottie.host/3b1c6b95-fed5-4d8b-83e2-ce923ec5dd3e/gtCRoHfPDr.json" background="transparent" speed="1" style="width: 10x; height: 300px;" loop autoplay></dotlottie-player>
+            </div>
+            <div class="city-error">
+                <h2>NOT FOUND CITY </h2>
+                <p>Please try again..</p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
